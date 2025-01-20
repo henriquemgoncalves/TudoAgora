@@ -1,0 +1,53 @@
+@use '../variables'
+
+#form
+    width: 100%
+    padding: 0 10px 30px 10px
+    // border-bottom: 3px solid variable.$color-text  
+    
+    #contact-form
+        display: flex
+        flex-direction: column
+        max-width: 500px
+        margin: variables.$sz-2 auto
+        padding: 20px
+        background-color: variables.$color-principal
+        border-radius: 5px
+        gap: variables.$sz-1
+
+        h4
+            text-align: center
+            margin-bottom: variables.$sz-1
+            color: #FFF
+            font-size: 1.5rem
+            font-weight: variables.$weight-5
+
+        input, textarea
+            margin-bottom: 15px
+            padding: 10px
+            font-size: variables.$sz-1
+            border: 1px solid #FFF
+            outline: none
+            border-radius: 5px
+
+            &:focus
+                border-color: #FFF
+
+        button
+            padding: 10px
+            background-color: #0d0258
+            color: #FFF
+            font-size: variables.$sz-1
+            border: none
+            border-radius: 5px
+            cursor: pointer
+            transition: background-color 0.3s
+
+            &:hover
+                background-color: #070030
+
+        .status
+            margin-top: 10px
+            font-size: 0.9rem
+            text-align: center
+            color: #FFF

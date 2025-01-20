@@ -1,0 +1,24 @@
+@use '../variables'
+@use '../mixins'
+    
+#footer
+    width: 100%
+    height: 150px
+    background-color: variables.$color-principal
+    @include mixins.display
+    flex-direction: column
+    gap: variables.$sz-1
+
+    h2
+        color: #FFF
+        font-size: variables.$sz-1
+        font-weight: variables.$weight-5
+
+    .social
+        display: flex
+        gap: variables.$sz-2
+
+        a
+            text-decoration: none
+            color: #FFF
+            font-size: 1.5rem

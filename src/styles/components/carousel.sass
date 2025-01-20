@@ -1,0 +1,45 @@
+@use '../variables'
+@use '../mixins'
+    
+#featured
+    width: 100%
+    @include mixins.display
+    
+
+    .carousel
+        @include mixins.screen  
+
+    .item
+        height: 80vh
+        @include mixins.display
+        flex-direction: column
+        text-align: center
+        position: relative
+
+        a
+            @include mixins.screen            
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-between
+            text-align: center
+            position: absolute
+            text-decoration: none
+
+            img
+                @include mixins.screen
+                object-position: center
+                object-fit: cover
+
+            h4
+                width: 100%
+                padding: variables.$sz-1 0
+                top: 80%
+                color: #FFF
+                background-color: #150485
+                margin-top: 10px
+                font-size: 1.2rem
+                position: absolute
+
+
+        
