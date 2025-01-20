@@ -9,7 +9,7 @@ const Weather = () => {
     useEffect(() => {
         const getWeather = async() => {
             try {
-                const url = 'http://api.weatherapi.com/v1/forecast.json?key=f17bc373399e413d8fa180035251201&q=auto:ip&days=7&aqi=no&alerts=no';
+                const url = 'https://api.weatherapi.com/v1/forecast.json?key=f17bc373399e413d8fa180035251201&q=auto:ip&days=7&aqi=no&alerts=no';
                 const respnse = await fetch(url);
                 const data = await respnse.json();
                 console.log(data);
